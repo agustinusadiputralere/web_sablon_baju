@@ -1,0 +1,284 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.contact-info a {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.contact-info a:hover {
+    color: #d1ecf1;
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #343a40;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.social-media a:hover {
+    color: #007bff;
+}
+
+/* Header */
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Home Section */
+.home {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px;
+}
+
+.home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(bb.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    position: relative;
+    z-index: 1;
+}
+
+.home h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.home p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.icon-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.icon-button:hover {
+    background-color: #0056b3;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.introduction .intro-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.introduction p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #555;
+}
+
+.testimonials {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+}
+
+.testimonials h2 {
+    margin-bottom: 40px;
+}
+
+.testimonials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.testimonials ul li {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonials ul li:hover {
+    transform: scale(1.05);
+}
+
+.promo .promo-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promo p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.gallery ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery ul li {
+    margin: 10px;
+}
+
+.gallery ul li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery ul li img:hover {
+    transform: scale(1.05);
+}
+
+.gallery ul li p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+.search-form {
+    display: flex;
+    margin-left: auto;
+}
+
+.search-container {
+    position: fixed;
+    top: 5px; /* Ubah nilai ini untuk menyesuaikan posisi vertikal */
+    left: 20px;
+    z-index: 999;
+}
+
+
+
+.search-form {
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
